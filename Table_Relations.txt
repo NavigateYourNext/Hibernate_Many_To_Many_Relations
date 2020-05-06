@@ -1,0 +1,20 @@
+*--- ONE TO ONE UNI---*
+Create join relation in table A which receives key from other table B.
+
+*--- ONE TO ONE BI---*
+Create join relation in table A which receives key form other table B.
+Create mappedBy relation in table B reference to the table A relation.
+
+*--- ONE TO MANY UNI---*
+Create join relation in table A to match with other table's foreign key. Because key is going from table A to table B.
+(Create convenient method in table A)
+
+*--- ONE TO MANY BI---*
+Create ManyToOne relation in table A which has the foreign key.
+Create OneToMany relation with mappedBy in table B which matches foreign key from table A. (Create convenient method)
+
+*--- MANY TO MANY---*
+Create join relation in both tables A & B on respective foreign key's. Create table C along with PK of both the tables and create
+Composite Primary Key and Make both keys foreign key pointing to there own classes primary keys. (Create convenient method in table A)
+
+
